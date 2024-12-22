@@ -3,7 +3,7 @@
 
 /* Base */
 :root {
-  --clr-primary: #fe5722;
+  --clr-primary: #f7862f;
   --clr-secondary: #fff;
 }
 
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #f7862f !important;
+  background: #000 !important;
   color: var(--clr-secondary);
   overflow-x: hidden;
 }
@@ -154,7 +154,7 @@ nav ul li a {
 
 /* Hero Section */
 #hero-section {
-  background: #f7862f;
+  background: #000;
   margin-top: 60px;
 }
 
@@ -179,6 +179,58 @@ nav ul li a {
 
 #hero-section .visual img {
   margin-left: auto;
+}
+
+.carousel0 {
+  width: 376px;
+  height: 376px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 20px solid #ec7938; /* Outer border with a deep orange color */
+  box-shadow: 20px 0 0 20px #e55822; 
+}
+
+
+.carousel0-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.carousel0-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 858px) {
+
+  #hero-section {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements */
+    align-items: center;
+    text-align: center; /* Center text */
+  }
+
+
+
+  .carousel0 {
+    margin: 0 auto; /* Center the carousel2 horizontally */
+    display: flex; /* Ensure proper layout */
+    justify-content: center; /* Center content within the div */
+    align-items: center; /* Center content vertically */
+  }
+
+  .carousel0 img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
 }
 
 /* End Hero Section */
@@ -259,6 +311,61 @@ nav ul li a {
   object-fit: cover;
   flex-shrink: 0;
 }
+
+
+
+
+
+
+@media (max-width: 858px) {
+
+  #about .container {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements */
+    align-items: center;
+    text-align: center; /* Center text */
+  }
+
+  #about .text {
+    margin-bottom: 20px; /* Add spacing below the text section */
+  }
+
+  .carousel {
+    margin: 0 auto; /* Center the carousel2 horizontally */
+    display: flex; /* Ensure proper layout */
+    justify-content: center; /* Center content within the div */
+    align-items: center; /* Center content vertically */
+  }
+
+  .carousel img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+}
+
+.carousel2 {
+  width: 376px;
+  height: 376px;
+  border-radius: 50%; /* Ensures the carousel is a perfect circle */
+  overflow: hidden;
+  position: relative;
+  border: 20px solid #ec7938; /* Outer border with a deep orange color */
+  box-shadow: 0 0 0 20px #e55822; /* Extra border for shadow effect */
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.carousel2 img {
+  width: 100%; /* Ensures the image covers the full carousel width */
+  height: 100%; /* Ensures the image covers the full carousel height */
+  object-fit: cover; /* Adjusts how the image fits into its container */
+  border-radius: 50%; /* Ensures the image conforms to the circular shape */
+}
+
 
 @keyframes slide {
   0% {
@@ -395,6 +502,48 @@ nav ul li a {
   margin-right: 20px;
 }
 
+
+
+/* Mobile View Styling */
+@media (max-width: 858px) {
+  #testimonial .container {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements */
+    align-items: center;
+    text-align: center; /* Center text */
+  }
+
+  #testimonial .text {
+    margin-bottom: 20px; /* Add spacing below the text section */
+  }
+
+  #testimonial .user {
+    justify-content: center; /* Center the user info horizontally */
+    text-align: center;
+    gap: 5px; 
+    padding-bottom: 20px;
+  }
+ 
+
+  #testimonial .user img {
+    margin: 0 10px; /* Center the user image */
+    display: block; /* Ensure proper alignment */
+  }
+
+  #testimonial .carousel2 {
+    margin: 0 auto; /* Center the carousel2 horizontally */
+    display: flex; /* Ensure proper layout */
+    justify-content: center; /* Center content within the div */
+    align-items: center; /* Center content vertically */
+  }
+
+  #testimonial .carousel2 img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
 /* End Testimonial */
 
 /* FAQ */
@@ -519,7 +668,7 @@ details[open] summary~* {
 }
 
 /* Hover effect for icons */
-.footer-about a:hover i {
+.footer-about a:hover {
   color: #FF4500; /* Change to orange-red color on hover */
 }
 .copyright {
@@ -548,7 +697,7 @@ details[open] summary~* {
     left: -100%;
     transition: all 0.5s;
     flex-direction: column;
-    background: #fff5f2;
+    background: #000;
   }
 
   nav ul li {
