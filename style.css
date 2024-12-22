@@ -216,9 +216,11 @@ nav ul li a {
   }
 
 
-
   .carousel0 {
-    margin: 0 auto; /* Center the carousel2 horizontally */
+    width: 80%; /* Adjust carousel width to fit smaller screens */
+    max-width: 376px; /* Set a max width to maintain design consistency */
+    height: auto; /* Allow height to adjust based on width */
+    margin: 20px auto; /* Add some vertical spacing and center horizontally */
     display: flex; /* Ensure proper layout */
     justify-content: center; /* Center content within the div */
     align-items: center; /* Center content vertically */
@@ -331,7 +333,10 @@ nav ul li a {
   }
 
   .carousel {
-    margin: 0 auto; /* Center the carousel2 horizontally */
+    width: 80%; /* Adjust carousel width to fit smaller screens */
+    max-width: 376px; /* Set a max width to maintain design consistency */
+    height: auto; /* Allow height to adjust based on width */
+    margin: 20px auto; /* Add some vertical spacing and center horizontally */
     display: flex; /* Ensure proper layout */
     justify-content: center; /* Center content within the div */
     align-items: center; /* Center content vertically */
@@ -530,8 +535,11 @@ nav ul li a {
     display: block; /* Ensure proper alignment */
   }
 
-  #testimonial .carousel2 {
-    margin: 0 auto; /* Center the carousel2 horizontally */
+  .carousel2 {
+    width: 80%; /* Adjust carousel width to fit smaller screens */
+    max-width: 376px; /* Set a max width to maintain design consistency */
+    height: auto; /* Allow height to adjust based on width */
+    margin: 20px auto; /* Add some vertical spacing and center horizontally */
     display: flex; /* Ensure proper layout */
     justify-content: center; /* Center content within the div */
     align-items: center; /* Center content vertically */
